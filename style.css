@@ -1,0 +1,68 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: red;
+}
+
+button{
+    background-color:blueviolet;
+    padding: 4px 8px;
+    margin-left: 600px;
+    color:aliceblue;
+    
+}
+.form-group {
+display: flex;
+margin-bottom: 2px;
+}
+
+label, .form-group label {
+width: 200px; 
+margin-right: 1px;
+font-weight: bold;
+}
+
+input, .form-group input,.form-group select {
+border: 1px solid red;
+height: 20px;
+margin-left: 300px;
+border-radius: 4px;
+padding: 4px 8px;
+width: 250px
+}
+
+.address-group {
+display: flex;
+flex-direction: column;
+gap: 10px;
+width:300px;
+}
+
+.header{
+    height: 30px; 
+    background-color: purple;
+}
+
+.second-input input{
+    margin-left: 20px;
+}
+
+.email-input input{
+    width: 300px ;
+}
+.drop-down select{
+    padding: 0px;
+    
+}
+.hobbies input{
+    width: 85%; 
+    margin-left: 0px ; 
+    margin-top: 14px;
+}
+
+.button button{
+    align-items: center; 
+    justify-content: center;
+}
