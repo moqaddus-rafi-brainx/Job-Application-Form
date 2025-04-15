@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      h1 {
+            text-align: center;
+        }
+
+        h2 {
+            color: red;
+        }
+
+        button{
+            background-color:blueviolet;
+            padding: 4px 8px;
+            margin-left: 600px;
+            color:aliceblue;
+            
+        }
+        .form-group {
+  display: flex;
+  margin-bottom: 2px;
+}
+
+label, .form-group label {
+  width: 200px; 
+  margin-right: 1px;
+  font-weight: bold;
+}
+
+input, .form-group input,.form-group select {
+  border: 1px solid red;
+  height: 20px;
+  margin-left: 300px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  width: 250px
+}
+
+.address-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width:300px;
+  }
+
+   
+        
+    </style>
+    <title>Job Application</title>
+</head>
+<body>
+    <div style="height: 30px; background-color: purple;"></div>
+    <h1>Job application</h1>
+    <form>
+        <div class="PersonalInfo">
+            <h2>Personal Information</h2>
+            <div class="form-group">
+                <label>Name</label>
+            <input type="text" placeholder="First Name"/>
+            <input style="margin-left: 20px;" type="text" placeholder="Last Name"/>
+            </div>
+            <br>
+            <div class="form-group">
+            <label>Email</label>
+            <input style="width: 300px ;"  type="email" placeholder="user@example.com"/>
+            </div>
+            <br>
+            <div class="form-group">
+            <label>Education</label>
+            <select style="padding: 0px;">
+                <option value="" disabled selected>Choose Option</option>
+                <option value="bach">Bachelors</option>
+                <option value="mas">Masters</option>
+            </select>
+            </div>
+            <br>
+            <div class="form-group">
+            <label>Resume</label>
+            <input type="file" value="resume"/>
+            </div>
+            <br>
+
+            <div class="form-group">
+            <label>Address</label>
+            <div class="address-group">
+
+                <input type="text" id="address1"/>
+                
+                <input type="text" id="address2"/>
+                
+            
+
+                <select style="padding: 0px;">
+                    <option value="" disabled selected>Select a country</option>
+                    <option value="pakistan">Pakistan</option>
+                    <option value="india">India</option>
+                </select>
+        
+                
+                <input  type="text" id="address3"/>
+                <input type="text" id="address4"/>
+            </div>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="Phone">Phone Number</label>
+                <input type="number" id="Phone"/>
+            </div>
+            <br>
+            <label>What are your hobbies?</label>
+            <br>
+            <input style="width: 85%; margin-left: 0px ; margin-top: 14px;" type="text" id="hobbies"/>
+
+            
+
+
+        </div>
+
+        <div class="EmpDetails">
+            <h2>Previous/Current Employment Details</h2>
+            <br>
+            <div class="form-group">
+            <label>Company Name</label>
+            <input type="text"/>
+            </div>
+            <br>
+            <div class="form-group">
+                <label>Job Title</label>
+                <input type="text"/>
+            </div>
+            <br>
+            <div class="form-group">
+                <label>How long where you here?</label>
+                <input type="text"/>
+            </div>
+            <br>
+            <h2>Reference#1</h2>
+            <br>
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text"/>
+            </div>
+            <br>
+            <div class="form-group">
+                <label>Phone</label>
+                <input type="number"/>
+            </div>
+            <br>
+            <h2>Reference#2</h2>
+            <br>
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text"/>
+            </div>
+            <br>
+            <div class="form-group">
+                <label>Phone</label>
+                <input type="number"/>
+            </div>
+            <br>
+        </div>
+        <div style="align-items: center; justify-content: center;">
+        <button type="submit">Apply</button>
+        </div>
+    </form>
+    
+</body>
+</html>
